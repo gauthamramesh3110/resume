@@ -1,165 +1,161 @@
-/*Fonts*/
-
-@font-face {
-    font-family: 'proxima-nova-black';
-    src: url('./fonts/ProximaNova-Black.ttf');
-}
-
-@font-face {
-    font-family: 'proxima-nova-bold';
-    src: url('./fonts/ProximaNova-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'proxima-nova-extra-bold';
-    src: url('./fonts/ProximaNova-Extrabld.ttf');
-}
-
-@font-face {
-    font-family: 'proxima-nova-light';
-    src: url('./fonts/ProximaNova-Light.ttf');
-}
-
-@font-face {
-    font-family: 'proxima-nova-regular';
-    src: url('./fonts/ProximaNova-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'proxima-nova-semi-bold';
-    src: url('./fonts/ProximaNova-Semibold.ttf');
-}
-
-@font-face {
-    font-family: 'proxima-nova-thin';
-    src: url('./fonts/ProximaNovaT-Thin.ttf');
-}
-
-@font-face {
-    font-family: 'grand-hotel';
-    src: url('./fonts/GrandHotel-Regular.ttf');
-}
-
-/*Style*/
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
 }
 
-body {
-    display: block;
-    position: relative;
+.main {
+    display: flex;
 }
 
-#profile-picture {
-    box-shadow: 0px 0px 10px;
-    position: absolute;
-    top: 80px;
-    left: 48%;
-    width: 28%;
-    border-radius: 10000px;
+
+/*Fonts*/
+@font-face {
+    src: url('./fonts/grand-hotel-regular.ttf');
+    font-family: 'grand-hotel-regular'
 }
 
-.main-nav {
+@font-face {
+    src: url('./fonts/proxima-nova-black.ttf');
+    font-family: 'proxima-nova-black'
+}
+
+@font-face {
+    src: url('./fonts/proxima-nova-bold.ttf');
+    font-family: 'proxima-nova-bold'
+}
+
+@font-face {
+    src: url('./fonts/proxima-nova-extrabold.ttf');
+    font-family: 'proxima-nova-extrabold'
+}
+
+@font-face {
+    src: url('./fonts/proxima-nova-light.ttf');
+    font-family: 'proxima-nova-light'
+}
+
+@font-face {
+    src: url('./fonts/proxima-nova-regular.ttf');
+    font-family: 'proxima-nova-regular'
+}
+
+@font-face {
+    src: url('./fonts/proxima-nova-semibold.ttf');
+    font-family: 'proxima-nova-semibold'
+}
+
+@font-face {
+    src: url('./fonts/proxima-nova-thin.ttf');
+    font-family: 'proxima-nova-thin'
+}
+
+
+
+
+
+
+
+/*About Section*/
+.about {
+    color: white;
+    flex: 0.6;
+    background: #22223B;
+}
+
+.about nav {
+    margin: 7% 50% 12% 12%;
     font-family: 'proxima-nova-regular';
     font-size: 24px;
-    margin-top: 7%;
-    margin-bottom: 11%;
-    margin-left: 7%;
-    background: none;
 }
 
-.main-nav ul {
+.about ul {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 
-.main-nav li {
-    margin-right: 3.5em;
-    display: inline;
+.about li {
+    width: 33%;
 }
 
-.main-nav a {
+.about nav a {
     color: white;
     text-decoration: none;
 }
 
-.about {
-    position: relative;
-    width: 60%;
-    height: 100vh;
-    float: left;
-    background: #22223B;
-    color: white;
-
+.about .summary {
+    margin: 0% 27% 15% 12%;
+    display: flex;
+    flex-direction: column;
 }
 
-.about .details {
-    margin-left: 7%;
-    margin-right: 15%;
-}
-
-.about h1 {
-    font-family: 'grand-hotel';
+.about .summary h1 {
+    font-family: 'grand-hotel-regular';
     font-size: 100px;
-    margin-bottom: 18px;
+    margin-bottom: 3%;
 }
 
-.about h2 {
+.about .summary h2 {
     font-family: 'proxima-nova-light';
     font-size: 40px;
-    margin-bottom: 15%;
+    margin-bottom: 20%;
 }
 
-.about p {
-    text-align: justify;
+.about .summary p {
     font-family: 'proxima-nova-light';
     font-size: 24px;
-    margin-bottom: 5%;
+    line-height: 1.9;
 }
 
+
+
+
+
+/*Contact Section*/
 .contact {
-    position: relative;
-    width: 40%;
-    height: 100vh;
-    float: left;
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background: #F2E9E4;
 }
 
-.contact .details {
-    width: 100%;
-    bottom: 7%;
-    position: absolute;
+.contact .personal-contact {
+    margin: 0% 15% 5% 15%;
 }
-
-.contact .contact-details {
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 5%;
-}
-
-.contact img {
-    height: 80px;
-}
-
-.contact #instagram {
-    margin: 0% 5%;
-}
-.contact #linkedin{
-    margin-left: 5%;
-}
-
-.contact .social-media {
-    text-align: center;
-}
-
-.contact h1 {
+.contact .personal-contact h1{
     font-family: 'proxima-nova-bold';
     font-size: 35px;
     margin-bottom: 5%;
 }
-
-.contact p {
+.contact .personal-contact p{
     font-family: 'proxima-nova-regular';
     font-size: 24px;
-    line-height: 1.5;
+    line-height: 2.1;
+}
+
+.contact .social-media {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0% 15% 15% 15%;
+}
+
+.contact .social-media img {
+    width: 60%;
+}
+
+.profile-picture{
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px;
+    margin: 0% 0% 3% -30%;
+}
+
+footer{
+    background: #191716;
+    padding: 1%;
+    font-family: 'proxima-nova-regular';
+    color: white;
+    text-align: center;
 }

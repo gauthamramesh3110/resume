@@ -1,0 +1,165 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'proxima-nova-black';
+    src: url('./fonts/ProximaNova-Black.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-bold';
+    src: url('./fonts/ProximaNova-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-extra-bold';
+    src: url('./fonts/ProximaNova-Extrabld.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-light';
+    src: url('./fonts/ProximaNova-Light.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-regular';
+    src: url('./fonts/ProximaNova-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-semi-bold';
+    src: url('./fonts/ProximaNova-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'proxima-nova-thin';
+    src: url('./fonts/ProximaNovaT-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'grand-hotel';
+    src: url('./fonts/GrandHotel-Regular.ttf');
+}
+
+/*Style*/
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    display: block;
+    position: relative;
+}
+
+#profile-picture {
+    box-shadow: 0px 0px 10px;
+    position: absolute;
+    top: 80px;
+    left: 48%;
+    width: 28%;
+    border-radius: 10000px;
+}
+
+.main-nav {
+    font-family: 'proxima-nova-regular';
+    font-size: 24px;
+    margin-top: 7%;
+    margin-bottom: 11%;
+    margin-left: 7%;
+    background: none;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li {
+    margin-right: 3.5em;
+    display: inline;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.about {
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    float: left;
+    background: #22223B;
+    color: white;
+
+}
+
+.about .details {
+    margin-left: 7%;
+    margin-right: 15%;
+}
+
+.about h1 {
+    font-family: 'grand-hotel';
+    font-size: 100px;
+    margin-bottom: 18px;
+}
+
+.about h2 {
+    font-family: 'proxima-nova-light';
+    font-size: 40px;
+    margin-bottom: 15%;
+}
+
+.about p {
+    text-align: justify;
+    font-family: 'proxima-nova-light';
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+
+.contact {
+    position: relative;
+    width: 40%;
+    height: 100vh;
+    float: left;
+    background: #F2E9E4;
+}
+
+.contact .details {
+    width: 100%;
+    bottom: 7%;
+    position: absolute;
+}
+
+.contact .contact-details {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.contact img {
+    height: 80px;
+}
+
+.contact #instagram {
+    margin: 0% 5%;
+}
+.contact #linkedin{
+    margin-left: 5%;
+}
+
+.contact .social-media {
+    text-align: center;
+}
+
+.contact h1 {
+    font-family: 'proxima-nova-bold';
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+.contact p {
+    font-family: 'proxima-nova-regular';
+    font-size: 24px;
+    line-height: 1.5;
+}

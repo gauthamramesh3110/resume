@@ -3,8 +3,40 @@
     padding: 0%;
 }
 
-.main {
-    display: flex;
+@media(min-width:800px) {
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profile-picture {
+        margin: 0% 0% 3% -30%;
+        width: 60%;
+    }
+
+    .contact .personal-contact {
+        margin: 0% 15% 5% 15%;
+    }
+}
+
+@media(max-width:800px) {
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .profile-picture {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: 20%;
+    }
+
+    .contact .personal-contact {
+        margin: 3% 15% 5% 15%;
+    }
+    .
 }
 
 
@@ -120,15 +152,13 @@
     background: #F2E9E4;
 }
 
-.contact .personal-contact {
-    margin: 0% 15% 5% 15%;
-}
-.contact .personal-contact h1{
+.contact .personal-contact h1 {
     font-family: 'proxima-nova-bold';
     font-size: 35px;
     margin-bottom: 5%;
 }
-.contact .personal-contact p{
+
+.contact .personal-contact p {
     font-family: 'proxima-nova-regular';
     font-size: 24px;
     line-height: 2.1;
@@ -145,14 +175,12 @@
     width: 60%;
 }
 
-.profile-picture{
-    width: 60%;
+.profile-picture {
     border-radius: 50%;
     box-shadow: 0px 0px 4px;
-    margin: 0% 0% 3% -30%;
 }
 
-footer{
+footer {
     background: #191716;
     padding: 1%;
     font-family: 'proxima-nova-regular';
